@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+    <h2>Welcome to Smart Attendance System</h2>
+    <p>Automated face recognition-based attendance system</p>
+    
+    <div class="features">
+        <div class="feature-card">
+            <h3>Register Users</h3>
+            <p>Add new users with facial recognition</p>
+            <a href="/register" class="btn">Register</a>
+        </div>
+        
+        <div class="feature-card">
+            <h3>Take Attendance</h3>
+            <p>Real-time attendance using camera</p>
+            <a href="/attendance" class="btn">Take Attendance</a>
+        </div>
+        
+        <div class="feature-card">
+            <h3>View Reports</h3>
+            <p>Check attendance records and reports</p>
+            <a href="/reports" class="btn">View Reports</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
