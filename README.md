@@ -1,6 +1,6 @@
 # Vityarthi_Computer_Vision_Project
 This is a powerful open-source tool designed to detect fake images, videos, and audios.
-# Smart-Attendance-System-using-Face-Recognition_23BHI10065
+# Smart-Attendance-System-using-Face-Recognition_23BAI10715
 Computer vision_Vityarthi
 
 # Smart Attendance System using Face Recognition
