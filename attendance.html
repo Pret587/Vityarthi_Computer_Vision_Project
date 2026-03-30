@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Take Attendance</h2>
+
+<div class="attendance-section">
+    <video id="video" width="640" height="480" autoplay></video>
+    <div id="attendance-result"></div>
+    <button id="start-camera" class="btn">Start Camera</button>
+    <button id="stop-camera" class="btn">Stop Camera</button>
+</div>
+
+<div id="attendance-log">
+    <h3>Recent Attendance</h3>
+    <div id="log-entries"></div>
+</div>
+{% endblock %}
