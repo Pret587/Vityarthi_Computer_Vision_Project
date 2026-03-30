@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Attendance Reports</h2>
+
+<div class="report-actions">
+    <button id="export-csv" class="btn">Export to CSV</button>
+    <button id="refresh" class="btn">Refresh</button>
+</div>
+
+<table class="attendance-table">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Timestamp</th>
+            <th>Confidence</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in records %}
+        <tr>
+            <td>{{ record[0] }}</td>
+            <td>{{ record[1] }}</td>
+            <td>{{ record[2] }}</td>
+            <td>{{ "%.2f"|format(record[3]) }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div class="stats">
+    <h3>Statistics</h3>
+    <p>Total Records: {{ records|length }}</p>
+</div>
+{% endblock %}
