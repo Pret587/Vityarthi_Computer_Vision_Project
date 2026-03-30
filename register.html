@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Register New User</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="image">Upload Photo:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+    </div>
+    
+    <button type="submit" class="btn">Register User</button>
+</form>
+
+<div class="camera-section">
+    <h3>Or Use Camera</h3>
+    <video id="video" width="640" height="480" autoplay></video>
+    <button id="capture" class="btn">Capture Photo</button>
+    <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+</div>
+{% endblock %}
